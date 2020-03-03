@@ -14,7 +14,11 @@
 <title>Weather</title>
 </head>
 <body>
-	<h2>${weather}</h2>
+
+	<h2>${weather.productionCenter}</h2>
+	<c:forEach var="Stuff" items="${weather.data.text}">
+		<h6>${Stuff}</h6>
+	</c:forEach>
 
 
 
