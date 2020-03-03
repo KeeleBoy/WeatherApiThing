@@ -19,4 +19,7 @@
 
 
 </body>
+
+<a href="/" class="btn btn-secondary">Back home</a>
+
 </html>
