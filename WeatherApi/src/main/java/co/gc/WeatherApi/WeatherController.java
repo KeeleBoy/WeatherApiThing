@@ -18,15 +18,11 @@ public class WeatherController {
 	}
 
 	@RequestMapping("/result")
-	public ModelAndView result(
-			@RequestParam Double lat,
-			@RequestParam Double lon) {
+	public ModelAndView result(@RequestParam Double lat, @RequestParam Double lon) {
 		ModelAndView mav = new ModelAndView("result");
-		
 
 		mav.addObject("weather", apiServ.findWeather(lat, lon));
 
-		
 		return mav;
 	}
 
