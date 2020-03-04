@@ -4,6 +4,16 @@ public class Weather {
 
 	private Location location;
 	private Data data;
+	private Time time;
+
+	public Time getTime() {
+		return time;
+	}
+
+	public void setTime(Time time) {
+		this.time = time;
+	}
+
 	private String productionCenter;
 
 	public String getProductionCenter() {

@@ -14,11 +14,26 @@
 <title>Weather</title>
 </head>
 <body>
+	<div>
+		<h2>${weather.productionCenter}</h2>
+		<h2>Area Description: ${weather.location.areaDescription}</h2>
+		<h2>Time Zone: ${weather.location.timezone}</h2>
+	</div>
+	<div>
+		<h3>Day:</h3>
+		<c:forEach var="Stuff" items="${weather.time.startPeriodName}">
+			<h6>${Stuff}</h6>
+		</c:forEach>
+	</div>
+	<div>
+		<h3>Forecast:</h3>
+		<c:forEach var="Stuff" items="${weather.data.text}">
+			<h6>${Stuff}</h6>
+		</c:forEach>
+	</div>
 
-	<h2>${weather.productionCenter}</h2>
-	<c:forEach var="Stuff" items="${weather.data.text}">
-		<h6>${Stuff}</h6>
-	</c:forEach>
+
+
 
 
 
